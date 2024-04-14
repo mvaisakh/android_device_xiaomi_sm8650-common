@@ -170,13 +170,11 @@ vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudiochargerlistener.so
 vendor/lib64/libaudiocloudctrl.so
-vendor/lib64/libbatterylistener.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2udk7vendor.so
 vendor/lib64/libcapiv2uvvendor.so
 vendor/lib64/libdlbpreg.so
-vendor/lib64/libfmpal.so
 vendor/lib64/libhfp_pal.so
 vendor/lib64/libkaraokepal.so
 vendor/lib64/liblx-ar_util.so
@@ -445,7 +443,6 @@ odm/etc/init/android.hardware.contexthub-service.qmi.rc:vendor/etc/init/android.
 -odm/etc/vintf/manifest.xml:vendor/etc/vintf/android.hardware.contexthub-service.qmi.xml
 vendor/bin/hw/android.hardware.contexthub-service.qmi
 vendor/etc/chre/preloaded_nanoapps.json
-vendor/lib64/android.hardware.contexthub-V2-ndk.so
 
 # Diag
 system_ext/lib64/libdiag_system.qti.so
@@ -460,7 +457,6 @@ vendor/lib64/vendor.qti.diaghal@1.0.so
 # Display
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/lib64/libdisplayconfig.qti.so
-vendor/lib64/libdisplaydebug.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libhdrvivid.so
@@ -550,7 +546,6 @@ vendor/lib64/libbase64.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/libdrmutils.so
 vendor/lib64/libgpt.so
 vendor/lib64/libminksocket_vendor.so
 vendor/lib64/libops.so
@@ -789,7 +784,6 @@ vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig-service.xml
 vendor/lib64/libEvrcSwCodec.so
-vendor/lib64/libOmxCore.so
 vendor/lib64/libQcelp13SwCodec.so
 vendor/lib64/libcodec2_soft_ac4dec.so
 vendor/lib64/libcodec2_soft_common.so
