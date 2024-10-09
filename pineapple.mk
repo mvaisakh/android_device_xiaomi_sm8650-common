@@ -16,6 +16,9 @@ PRODUCT_BOARD_PLATFORM := $(TARGET_BOARD_PLATFORM)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
 
+# Audio
+$(call inherit-product, hardware/qcom-caf/sm8650/audio/configs/audio_vendor_product.mk)
+
 # Boot Control
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
