@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product-if-exists, vendor/xiaomi/sm8650-common/sm8650-common-vendor.mk)
+$(call inherit-product, vendor/xiaomi/sm8650-common/sm8650-common-vendor.mk)
 
 # Board
 TARGET_BOARD_PLATFORM := pineapple
