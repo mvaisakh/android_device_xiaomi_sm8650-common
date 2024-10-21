@@ -56,6 +56,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+
+PRODUCT_PACKAGES += \
+    fstab.qcom
+
 # Kernel
 TARGET_KERNEL_VERSION ?= 6.1
 TARGET_KERNEL_DIR ?= device/xiaomi/sm8650-kernel
