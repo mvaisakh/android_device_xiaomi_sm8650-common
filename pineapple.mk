@@ -56,6 +56,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml
 
+# Kernel
+TARGET_KERNEL_VERSION ?= 6.1
+TARGET_KERNEL_DIR ?= device/xiaomi/sm8650-kernel
+
+PRODUCT_COPY_FILES += \
+    $(TARGET_KERNEL_DIR)/Image:kernel
+
 # Keymint
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
