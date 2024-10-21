@@ -10,6 +10,24 @@ COMMON_PATH := device/xiaomi/sm8650-common
 # Use the non-open-source parts, if they're present
 -include vendor/xiaomi/sm8650-common/BoardConfigVendor.mk
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    init_boot \
+    odm \
+    product \
+    recovery \
+    system \
+    system_dlkm \
+    system_ext \
+    vbmeta \
+    vendor \
+    vendor_boot \
+    vendor_dlkm
+
+# Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
