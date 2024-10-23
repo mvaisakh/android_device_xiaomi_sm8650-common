@@ -79,11 +79,12 @@ PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 
 # Kernel
-TARGET_KERNEL_VERSION ?= 6.1
-TARGET_KERNEL_DIR ?= device/xiaomi/sm8650-kernel
+TARGET_KERNEL_VERSION := 6.1
+
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/kernel
 
 PRODUCT_COPY_FILES += \
-    $(TARGET_KERNEL_DIR)/Image:kernel
+    $(LOCAL_KERNEL):kernel
 
 # Keymint
 PRODUCT_COPY_FILES += \
