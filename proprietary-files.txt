@@ -1,1 +1,12 @@
-# Initial stub proprietary blobs list
+# From UKQ1.230804.001 V816.0.12.0.UNCMIXM release-keys
+
+# Init
+odm/etc/ueventd.rc
+vendor/bin/init.kernel.post_boot-pineapple.sh
+vendor/bin/init.kernel.post_boot.sh
+vendor/bin/init.qti.kernel.sh
+vendor/bin/init.qti.media.sh
+vendor/etc/init/hw/init.qcom.usb.rc
+vendor/etc/init/hw/init.qti.kernel.rc
+vendor/etc/init/init.qti.media.rc
+vendor/etc/ueventd.rc
