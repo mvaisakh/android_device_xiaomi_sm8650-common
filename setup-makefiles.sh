@@ -23,7 +23,7 @@ source "${HELPER}"
 
 function vendor_imports() {
     cat <<EOF >>"$1"
-		"device/foo/bar-common",
+		"device/xiaomi/sm8650-common",
 EOF
 }
 
@@ -54,7 +54,7 @@ function lib_to_package_fixup() {
 setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "**** FILL IN ALL DEVICE NAMES, SPACE DELIMITED ****"
+write_headers "houji"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt"
