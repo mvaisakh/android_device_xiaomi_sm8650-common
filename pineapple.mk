@@ -67,6 +67,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom
 
+# IR
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.ir-service.example
+
 # Kernel
 TARGET_KERNEL_VERSION ?= 6.1
 TARGET_KERNEL_DIR ?= device/xiaomi/sm8650-kernel
