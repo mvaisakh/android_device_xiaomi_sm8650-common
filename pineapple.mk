@@ -125,3 +125,24 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 $(call inherit-product, vendor/qcom/opensource/vibrator/vibrator-vendor-product.mk)
+
+# WiFi
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
+    frameworks/native/data/etc/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml \
+    frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service \
+    cnss_cli \
+    cnss-daemon \
+    hostapd \
+    hostapd_cli \
+    hs20-osu-client \
+    libcld80211 \
+    lib_driver_cmd_qcwcn \
+    libwifi-hal \
+    libwifi-hal-ctrl \
+    libwifi-hal-qcom \
+    libwpa_client \
+    wpa_supplicant
