@@ -68,38 +68,8 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-function blob_fixup() {
-    case "${1}" in
-        vendor/lib/libsample5.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libsample6.so" "libsample7.so" "${2}"
-            ;;
-        vendor/lib/libsample7.so)
-            [ "$2" = "" ] && return 0
-            "${PATCHELF}" --set-soname "libsample7.so" "${2}"
-            ;;
-        *)
-            return 1
-            ;;
-    esac
-
-    return 0
-}
-
 function blob_fixup_dry() {
     blob_fixup "$1" ""
-}
-
-function prepare_firmware() {
-    if [ "${SRC}" != "adb" ]; then
-        local STAR="${ANDROID_ROOT}"/lineage/scripts/motorola/star.sh
-        for IMAGE in bootloader radio; do
-            if [ -f "${SRC}/${IMAGE}.img" ]; then
-                echo "Extracting Motorola star image ${SRC}/${IMAGE}.img"
-                sh "${STAR}" "${SRC}/${IMAGE}.img" "${SRC}"
-            fi
-        done
-    fi
 }
 
 if [ -z "${ONLY_FIRMWARE}" ] && [ -z "${ONLY_TARGET}" ]; then
