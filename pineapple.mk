@@ -120,6 +120,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal
 
+# Shipping APi
+PRODUCT_SHIPPING_API_LEVEL := 34
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
