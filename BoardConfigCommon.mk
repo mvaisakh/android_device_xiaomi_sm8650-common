@@ -191,6 +191,9 @@ BOARD_RAMDISK_USE_LZ4 := true
 DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/configs/vintf/manifest_pineapple.xml
 
+DEVICE_MATRIX_FILE   += \
+    $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
+
 # WiFi
 WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wlan"
 WIFI_DRIVER_STATE_ON := "ON"
