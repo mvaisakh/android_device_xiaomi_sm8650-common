@@ -194,6 +194,9 @@ DEVICE_MANIFEST_FILE += \
 DEVICE_MATRIX_FILE   += \
     $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 
+DEVICE_FRAMEWORK_MANIFEST_FILE += \
+    $(COMMON_PATH)/configs/vintf/framework_manifest.xml
+
 # WiFi
 WIFI_DRIVER_STATE_CTRL_PARAM := "/dev/wlan"
 WIFI_DRIVER_STATE_ON := "ON"
