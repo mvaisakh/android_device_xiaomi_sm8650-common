@@ -75,19 +75,6 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/bin/cnd',
     ): blob_fixup()
         .add_needed('libbinder_shim.so'),
-    (
-        'vendor/lib64/hw/audio.primary.pineapple.so', 
-        'vendor/lib64/libaudioroute_ext.so',
-        'vendor/lib64/libar-pal.so',
-    ): blob_fixup()
-        .replace_needed('libaudioroute.so', 'libaudioroute-v34.so'),
-    (
-        'vendor/lib64/libdlbdsservice.so',
-        'vendor/lib64/libdlbpreg.so',
-        'vendor/lib64/soundfx/libdlbvol.so',
-        'vendor/lib64/soundfx/libhwdap.so',
-    ): blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so'),
     (

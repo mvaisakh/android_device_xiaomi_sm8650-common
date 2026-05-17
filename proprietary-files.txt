@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Xiaomi 14 (OS2.0.200.13.VNCCNXM). 
+## are from Xiaomi 14 (OS2.0.200.13.VNCCNXM).
 
 # ACDB
 vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd
@@ -49,6 +49,7 @@ odm/etc/audio/silent-3sec.wav
 odm/lib64/libaudioroute_ext.so
 odm/lib64/libcrussp.so;DISABLE_CHECKELF
 odm/lib64/libvoipspacespeech.so
+odm/lib64/vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk.so
 vendor/etc/audio_cloud_control_white_list.xml
 vendor/etc/mem_logger_config.xml
 vendor/etc/models/acd/environment.eai
