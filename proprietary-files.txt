@@ -1248,12 +1248,6 @@ vendor/lib64/libsubsystem_control.so
 vendor/bin/init.qti.qcv.sh
 vendor/etc/init/init.qti.qcv.rc
 
-# QEGAHAL
-vendor/bin/vendor.qti.qegahal-service
-vendor/etc/init/vendor.qti.qegahal-service.rc
-vendor/etc/vintf/manifest/vendor.qti.qegahal-service.xml
-vendor/lib64/vendor.qti.qegahal-impl.so
-
 # QESDK
 vendor/bin/qesdk-manager
 vendor/etc/init/qesdk-manager.rc
@@ -1361,6 +1355,7 @@ vendor/etc/vintf/manifest/vendor.qti.hardware.servicetrackeraidl-service.xml
 vendor/lib64/hw/vendor.qti.hardware.servicetrackeraidl-impl.so
 
 # QVR
+odm/etc/qega/QEGA_Config.txt
 vendor/bin/qvrcameratest
 vendor/bin/qvrdatacapture
 vendor/bin/qvrdatalogger
