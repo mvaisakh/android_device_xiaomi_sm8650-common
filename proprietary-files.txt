@@ -670,7 +670,7 @@ vendor/lib64/hw/libqtigatekeeper.so
 odm/bin/hw/android.hardware.gnss-aidl-service-qti
 odm/etc/init/android.hardware.gnss-aidl-service-qti.rc
 odm/etc/izat_device.conf
-odm/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
+odm/etc/vintf/manifest/gnss-default.xml
 odm/etc/vintf/manifest/vendor.qti.gnss-service.xml
 odm/lib64/android.hardware.gnss-aidl-impl-qti.so
 odm/lib64/vendor.qti.gnss-service.so
