@@ -1575,9 +1575,10 @@ vendor/etc/permissions/com.android.se.xml
 vendor/etc/vintf/manifest/android.hardware.secure_element.xml
 vendor/etc/vintf/manifest/secure_element-service.xml
 vendor/lib64/hw/libEseUtils.so
-vendor/lib64/libesesbprovision.so
-vendor/lib64/libtaautoload.so
 vendor/lib64/libGPQeSE.so
+vendor/lib64/libesesbprovision.so
+vendor/lib64/libstnfc-streset.so
+vendor/lib64/libtaautoload.so
 vendor/lib64/libvui_dmgr_client.so
 
 # Secure Processor
