@@ -92,6 +92,10 @@ vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib64/vendor.qti.voiceprint@1.0.so
 
 # Audio (Config)
+odm/etc/audio_policy_engine_configuration_mi.xml:vendor/etc/audio_policy_engine_configuration.xml
+odm/etc/audio_policy_engine_default_stream_volumes.xml:vendor/etc/audio_policy_engine_default_stream_volumes.xml
+odm/etc/audio_policy_engine_product_strategies.xml:vendor/etc/audio_policy_engine_product_strategies.xml
+odm/etc/audio_policy_engine_stream_volumes.xml:vendor/etc/audio_policy_engine_stream_volumes.xml
 odm/etc/audio/sku_pineapple/adsp_sleep_monitor.conf
 odm/etc/audio/sku_pineapple/audio_effects.xml
 odm/etc/audio/sku_pineapple/mixer_paths_overlay_dynamic.xml
